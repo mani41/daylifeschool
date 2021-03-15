@@ -14,6 +14,7 @@ public class StudentWelcomeController {
   public User welcomeStudent(@RequestBody User user) {
     user.setName(user.getName());
     user.setAge(user.getAge());
+    user.setBranch("CSE");
     return user;
   }
 
